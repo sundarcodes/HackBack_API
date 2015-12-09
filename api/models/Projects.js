@@ -9,7 +9,8 @@ module.exports = {
 
   attributes: {
 
-    name : { type: 'string' }
+    name : { type: 'string' },
+    event : { model: 'Event', required: true }
   }
 };
 

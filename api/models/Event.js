@@ -17,7 +17,7 @@ module.exports = {
 
     is_active : { type: 'boolean' },
 
-    projects: { collection: 'Projects', via: 'user' }
+    projects: { collection: 'Projects', via: 'event' }
   }
 };
 
