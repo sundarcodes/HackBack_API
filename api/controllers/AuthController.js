@@ -130,7 +130,7 @@ var AuthController = {
       // because we shouldn't expose internal authorization errors to the user.
       // We do return a generic error and the original request body.
       var flashError = req.flash('error')[0];
-
+      console.log(err);
       if (err && !flashError ) {
         req.flash('error', 'Error.Passport.Generic');
       } else if (flashError) {
@@ -170,7 +170,7 @@ var AuthController = {
 
         // Upon successful login, send the user to the homepage were req.user
         // will be available.
-        console.log(user);
+        //console.log(user);
         var userID = user.id;
         Passport.find({user: userID}, function(err, items){
             if(err) return err;

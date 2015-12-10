@@ -32,7 +32,7 @@ module.exports.policies = {
    '*': ['passport']
   },
   'UserController' : {
-    '*': ['sessionAuth']
+    '*': ['bearerAuth']
   }
 
 
