@@ -8,8 +8,10 @@
 module.exports = {
 
   attributes: {
-
     name : { type: 'string' },
+    techStack : { type: 'string' },
+    team : { model: 'Team' },
+    participants: { collection: 'Project_participants', via: 'project' },
     event : { model: 'Event', required: true }
   }
 };
