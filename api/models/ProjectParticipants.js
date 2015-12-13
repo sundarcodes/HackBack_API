@@ -8,8 +8,8 @@
 module.exports = {
 
   attributes: {
-    project : { model: 'Projects', required: true },
-    participant : { model: 'User', required: true }
+    project : { model: 'Project' },
+    participant : { model: 'User' }
   }
 };
 

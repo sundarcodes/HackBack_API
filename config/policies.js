@@ -28,6 +28,8 @@ module.exports.policies = {
 
   // '*': true,
   '*': ['bearerAuth'], // Everything resctricted here,
+  'EventController':true,
+  'ProjectController':true,
   'auth': {
    '*': ['passport']
   },
