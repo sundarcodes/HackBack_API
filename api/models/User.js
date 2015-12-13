@@ -6,7 +6,8 @@ var User = {
     username  : { type: 'string', unique: true },
     email     : { type: 'email',  unique: true },
     passports : { collection: 'Passport', via: 'user' },
-    isAdmin   : { type: 'boolean' }
+    isAdmin   : { type: 'boolean' },
+    projects : { collection: 'ProjectParticipants', via: 'participant'}
   }
 };
 

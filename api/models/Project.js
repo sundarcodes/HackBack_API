@@ -13,6 +13,7 @@ module.exports = {
     techStack : { type: 'array' },
     repoLink : { type: 'string' },
     participants: { collection: 'ProjectParticipants', via: 'project' },
+    feedbacks: { collection: 'Feedback', via: 'project' },
     event : { model: 'Event' }
   }
 };
