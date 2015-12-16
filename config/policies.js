@@ -31,6 +31,7 @@ module.exports.policies = {
   'EventController':true,
   'ProjectController':true,
   'ProjectParticipantsController':true,
+  'Feedback':true,
   'auth': {
    '*': ['passport']
   },
